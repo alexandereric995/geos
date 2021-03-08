@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jata_MalaysiaV2.svg/250px-Jata_MalaysiaV2.svg.png">
+    <title>MY GPS SYSTEM</title>
+</head>
+<body>
+<script>
+
+    /**
+*Edit by Alexander Eric
+     * For testing if basic geolocation functionality is working
+     */
+
+    getLocation();
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            console.log( "Geolocation is not supported by this browser." );
+        }
+    }
+    function showPosition(position) {
+        console.log("Location object received");
+        console.log( "Latitude: " + position.coords.latitude +
+                ", Longitude: " + position.coords.longitude  +
+                ", Accuracy " + position.coords.accuracy);
+    }
+</script>
+</body>
+</html>
