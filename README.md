@@ -1,4 +1,4 @@
-# MY GPS SAMPLE
+# MY GPS SAMPLE (SCRATCH DISPLAY VERSION) 
 
     L I C E N S E
     Version 2.0, xx February 2021
